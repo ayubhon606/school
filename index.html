@@ -1,0 +1,912 @@
+<<<<<<< HEAD
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f7f2">
+  <title>Школа №1 | Коканд</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <span class="logo" id="schoolLogo">Ш1</span>
+      <span class="brand-text">Школа №1<small>Город Коканд · С 1898 года</small></span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#about">О школе</a>
+      <a href="#teachers">Учителя</a>
+      <a href="#news">Новости</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+      <span id="themeIcon">☾</span>
+    </button>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <div class="eyebrow"><span class="status-dot"></span> ОБРАЗОВАНИЕ · ТРАДИЦИИ · БУДУЩЕЕ</div>
+        <h1>История знаний.<br><span>Будущее поколений.</span></h1>
+        <p>Школа №1 города Коканда — место, где многолетние традиции образования встречаются с новыми возможностями.</p>
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">Открыть историю <span>↗</span></a>
+          <a href="#achievements" class="btn btn-secondary">Наши достижения</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>1898</strong><span>Год основания</span></div>
+          <div><strong>128+</strong><span>Лет истории*</span></div>
+          <div><strong>∞</strong><span>Возможностей</span></div>
+        </div>
+        <small class="note">* По состоянию на 2026 год. Исторические сведения необходимо проверить.</small>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+        <div class="visual-glow"></div>
+        <div class="school-emblem">
+          <div class="emblem-top">SCHOOL №1</div>
+          <div class="emblem-symbol">✦</div>
+          <div class="emblem-main">ЗНАНИЯ</div>
+          <div class="emblem-bottom">КОКАНД · 1898</div>
+        </div>
+        <div class="float-card float-card-top"><span>✦</span> Знания без границ</div>
+        <div class="float-card float-card-bottom"><span>↗</span> Путь к успеху</div>
+        <div class="visual-number">№ 01</div>
+      </div>
+      <a href="#about" class="scroll-hint">ПРОКРУТИТЕ ВНИЗ <span>↓</span></a>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">01 / НАШИ КОРНИ</span><h2>Больше чем <span>школа.</span></h2></div>
+        <p>История, которая продолжается благодаря ученикам и учителям.</p>
+      </div>
+
+      <div class="about-grid">
+        <article class="history-card reveal">
+          <span class="card-kicker">НАЧАЛО ИСТОРИИ</span>
+          <div class="history-year">1898</div>
+          <h3>Первый шаг длиною в поколения</h3>
+          <p>Школа ведёт свою историю с 1898 года. Здесь необходимо разместить подтверждённые сведения о создании школы, её развитии и важных исторических событиях.</p>
+          <div class="history-line"><span></span><span></span><span></span><span></span></div>
+        </article>
+
+        <article class="director-card reveal">
+          <div class="director-top"><span class="card-kicker">ПЕРВЫЙ ДИРЕКТОР</span><span>01</span></div>
+          <div class="person-avatar">✦</div>
+          <h3>А.С Петросян</h3>
+          <p>1898-год он вкладывал все в эту школу и он основал эту школи из-за него мы учимся приходим к этому месту</p>
+          <span class="person-tag">История школы</span>
+        </article>
+
+        <article class="director-card current-director reveal">
+          <div class="director-top"><span class="card-kicker">СЕГОДНЯ</span><span>02</span></div>
+          <div class="person-avatar">✧</div>
+          <h3>Elshod Akramovich</h3>
+          <p>Он начал всою карьеру в 2020 году и он будет продолжить свой вклад в эту школу</p>
+          <span class="person-tag">Руководство школы</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section teachers-section" id="teachers">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">02 / НАША КОМАНДА</span><h2>Люди, которые <span>вдохновляют.</span></h2></div>
+        <p>10 лучших педагогов школы. Заполни реальные имена, стаж и достижения.</p>
+      </div>
+      <div class="teachers-grid" id="teachersGrid"></div>
+    </section>
+
+    <section class="section subjects-section" id="subjects">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">03 / ЗНАНИЯ И НАВЫКИ</span><h2>Мир наших <span>предметов.</span></h2></div>
+        <p>Выбери предмет, чтобы увидеть преподавателя и показатели освоения материала.</p>
+      </div>
+      <div class="subjects-grid" id="subjectsGrid"></div>
+      <p class="data-notice">Показатели освоения материала — демонстрационные данные. Замените их проверенной статистикой школы.</p>
+    </section>
+
+    <section class="section events-section" id="events">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">04 / ШКОЛЬНАЯ ЖИЗНЬ</span><h2>Каждый месяц — <span>событие.</span></h2></div>
+        <p>Примерный календарь мероприятий. Даты можно менять в течение года.</p>
+      </div>
+      <div class="events-layout">
+        <div class="month-list" id="monthList"></div>
+        <div class="month-events" id="monthEvents"></div>
+      </div>
+    </section>
+
+    <section class="section news-section" id="news">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">05 / БУДЬТЕ В КУРСЕ</span><h2>Жизнь школы <span>сегодня.</span></h2></div>
+        <p>Новости, события и важные объявления. Обновляйте информацию каждую неделю.</p>
+      </div>
+      <div class="news-grid" id="newsGrid"></div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">06 / МОМЕНТЫ</span><h2>Наша школа <span>в кадре.</span></h2></div>
+        <p>Уроки, праздники, школьный двор и незабываемые моменты.</p>
+      </div>
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-large reveal" data-image="./img/2-rasm.jpg">
+          <img src="./img/2-rasm.jpg" alt="Здание учебного заведения">
+          <span>01 / Наша школа сейчас </span>
+        </button>
+        <button class="gallery-item reveal" data-image="./img/3-rasm.jpg">
+          <img src="./img/3-rasm.jpg" alt="Школьный урок">
+          <span>02 / Уроки</span>
+        </button>
+        <button class="gallery-item reveal" data-image="./img/4-rasm.jpg">
+          <img src="./img/4-rasm.jpg" alt="Школьное мероприятие">
+          <span>03 / Школьный двор</span>
+        </button>
+        <button class="gallery-item reveal" data-image="./img/5-rasm.jpg">
+          <img src="./img/5-rasm.jpg" alt="Совместная работа">
+          <span>04 / Наша школа 2000 годах
+        </button>
+        <button class="gallery-item reveal" data-image="./img/1-rasm.jpg">
+          <img src="./img/1-rasm.jpg" alt="Природа и школьный двор">
+          <span>05 / Урока окружающего мира</span>
+        </button>
+      </div>
+      <!-- <p class="data-notice">Фотографии пока демонстрационные. Замени их настоящими фотографиями школы.</p> -->
+    </section>
+
+    <section class="section achievements-section" id="achievements">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">07 / НАШИ ПОБЕДЫ</span><h2>Стена <span>достижений.</span></h2></div>
+        <p>Результаты учеников, которыми гордится вся школа.</p>
+      </div>
+      <div class="achievements-grid">
+        <article class="achievement-card reveal"><span class="achievement-icon">♟</span><span class="achievement-number">01</span><h3>«Заковат»</h3><p>Участие и достижения учеников на областном этапе интеллектуального турнира.</p><span class="achievement-tag">Интеллектуальные игры</span></article>
+        <article class="achievement-card reveal"><span class="achievement-icon">◎</span><span class="achievement-number">02</span><h3>IELTS 7.5+</h3><p>Ученики с высокими результатами международного экзамена по английскому языку.</p><span class="achievement-tag">Иностранные языки</span></article>
+        <article class="achievement-card reveal"><span class="achievement-icon">✦</span><span class="achievement-number">03</span><h3>Олимпиады</h3><p>Ученики вошли топ 30 в олимпиаде на информатику, если хотите что-бы ваш сын тоже стал таким умным отправьте его к нам</p><span class="achievement-tag">Учебные успехи</span></article>
+        <article class="achievement-card reveal"><span class="achievement-icon">↗</span><span class="achievement-number">04</span><h3>Новые вершины</h3><p>Мы ждем самых лучших чуств на следдующий год к новым вершинам на олимпиадах</p><span class="achievement-tag">Наше будущее</span></article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">08 / ВАЖНАЯ ИНФОРМАЦИЯ</span><h2>Частые <span>вопросы.</span></h2></div>
+        <p>Ответы на вопросы учеников и родителей.</p>
+      </div>
+      <div class="faq-list" id="faqList"></div>
+    </section>
+
+    <section class="section contacts-section" id="contacts">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">09 / МЫ РЯДОМ</span><h2>Найдите <span>нас.</span></h2></div>
+        <p>Будем рады вашим вопросам и обращениям.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item"><span class="contact-icon">⌖</span><div><small>АДРЕС</small><h3>Ферганская область, город Коканд</h3><p>Школа №1</p></div></div>
+          <div class="contact-item"><span class="contact-icon">☎</span><div><small>ТЕЛЕФОН №1</small><h3><a href="tel:+998911388030">+998911388030</a></h3><p>Замените на реальный номер школы</p></div></div>
+          <div class="contact-item"><span class="contact-icon">☎</span><div><small>ТЕЛЕФОН №2</small><h3><a href="tel:+998998091176">+998998091176</a></h3><p>Дополнительный контакт</p></div></div>
+          <a class="btn btn-primary map-link" href="https://www.google.com/maps/search/?api=1&query=Школа+1+Коканд+Узбекистан" target="_blank" rel="noopener">Открыть маршрут <span>↗</span></a>
+        </div>
+        <div class="map-frame reveal">
+          <div class="map-label"><span class="status-dot"></span> НАЙДИТЕ НАС НА КАРТЕ</div>
+          <iframe title="Поиск школы №1 в Коканде на карте" src="https://maps.google.com/maps?q=Школа%20№1%20Коканд%20Узбекистан&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-caption"><span>⌖</span><div><strong>Школа №1</strong><small>Коканд, Узбекистан</small></div><span class="map-arrow">↗</span></div>
+        </div>
+      </div>
+      <p class="data-notice">Карта показывает результат поиска по названию школы. Проверьте точное местоположение и выберите правильную метку в Google Maps.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="brand footer-brand"><span class="logo">Ш1</span><span class="brand-text">Школа №1<small>Коканд · 1898</small></span></a>
+    <p>Традиции прошлого. Возможности будущего.</p>
+    <a href="#home" class="back-top">НАВЕРХ ↑</a>
+    <div class="footer-bottom">
+        <h2>Admin for this site in telegram:@a_yyybbb</h2>
+      © 2026 Школа №1 города Коканда. Все права защищены.</div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">×</button>
+    <img id="lightboxImage" src="" alt="Увеличенная фотография">
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Школа №1 | Digital Campus</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- INTRO -->
+    <div class="intro">
+
+        <div class="intro-number">01</div>
+
+        <h1>ШКОЛА №1</h1>
+
+        <p>Цифровой кампус</p>
+
+        <div class="loading">
+            <div class="loading-bar"></div>
+        </div>
+
+        <span class="loading-text">
+            ЗАГРУЗКА 01...
+        </span>
+
+    </div>
+
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>01</span>
+            <p>ШКОЛА</p>
+        </div>
+
+        <nav>
+
+            <a href="#home">
+                Главная
+            </a>
+
+            <a href="#about">
+                О школе
+            </a>
+
+            <a href="#subjects">
+                Предметы
+            </a>
+
+            <a href="#history">
+                История
+            </a>
+
+            <a href="#achievements">
+                Достижения
+            </a>
+
+            <a href="#gallery">
+                Галерея
+            </a>
+
+        </nav>
+
+        <button class="menu">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-left">
+
+                <span class="small-title">
+                    КОКАНД · УЗБЕКИСТАН · №01
+                </span>
+
+                <h1>
+                    НАША
+                    <span>ШКОЛА.</span>
+                </h1>
+
+                <p>
+                    Знания. Талант. Будущее.
+                    Одна школа — тысячи возможностей.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#about" class="btn">
+                        Исследовать школу →
+                    </a>
+
+                    <a href="#history" class="btn-outline">
+                        Наша история
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-right">
+
+                <div class="big-number">
+                    01
+                </div>
+
+                <div class="circle-text">
+
+                    <span>
+                        ОТКРЫВАЙ · УЧИСЬ · СОЗДАВАЙ ·
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="scroll">
+                ПРОКРУТИТЕ ↓
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+
+            <div class="section-title">
+
+                <span>
+                    01 / О ШКОЛЕ
+                </span>
+
+                <h2>
+                    КТО МЫ?
+                </h2>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <p>
+                        Школа №1 — это место, где знания,
+                        творчество и возможности для будущего
+                        объединяются в современной образовательной
+                        среде.
+                    </p>
+
+                    <p>
+                        Наша цель — помочь каждому ученику
+                        раскрыть свой талант, получить качественное
+                        образование и уверенно двигаться к своему
+                        будущему.
+                    </p>
+
+                </div>
+
+
+                <div class="stats">
+
+                    <div class="stat">
+
+                        <strong>
+                            2700+
+                        </strong>
+
+                        <span>
+                            УЧЕНИКОВ
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <strong>
+                            80+
+                        </strong>
+
+                        <span>
+                            ЛЕТ ИСТОРИИ
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <strong>
+                            100+
+                        </strong>
+
+                        <span>
+                            ПРЕПОДАВАТЕЛЕЙ
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <strong>
+                            500+
+                        </strong>
+
+                        <span>
+                            ДОСТИЖЕНИЙ
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUBJECTS -->
+        <section class="subjects" id="subjects">
+
+            <div class="section-title">
+
+                <span>
+                    02 / ЗНАНИЯ
+                </span>
+
+                <h2>
+                    МИР ЗНАНИЙ
+                </h2>
+
+            </div>
+
+
+            <div class="subject-grid">
+
+                <div class="subject-card">
+
+                    <span>01</span>
+
+                    <h3>
+                        МАТЕМАТИКА
+                    </h3>
+
+                    <p>
+                        Мир чисел и логики
+                    </p>
+
+                    <b>↗</b>
+
+                </div>
+
+
+                <div class="subject-card">
+
+                    <span>02</span>
+
+                    <h3>
+                        ФИЗИКА
+                    </h3>
+
+                    <p>
+                        Вселенная и энергия
+                    </p>
+
+                    <b>↗</b>
+
+                </div>
+
+
+                <div class="subject-card">
+
+                    <span>03</span>
+
+                    <h3>
+                        ХИМИЯ
+                    </h3>
+
+                    <p>
+                        Эксперименты и открытия
+                    </p>
+
+                    <b>↗</b>
+
+                </div>
+
+
+                <div class="subject-card">
+
+                    <span>04</span>
+
+                    <h3>
+                        ИНФОРМАТИКА
+                    </h3>
+
+                    <p>
+                        Технологии и будущее
+                    </p>
+
+                    <b>↗</b>
+
+                </div>
+
+
+                <div class="subject-card">
+
+                    <span>05</span>
+
+                    <h3>
+                        БИОЛОГИЯ
+                    </h3>
+
+                    <p>
+                        Изучение тайн жизни
+                    </p>
+
+                    <b>↗</b>
+
+                </div>
+
+
+                <div class="subject-card">
+
+                    <span>06</span>
+
+                    <h3>
+                        ЯЗЫКИ
+                    </h3>
+
+                    <p>
+                        Связь с целым миром
+                    </p>
+
+                    <b>↗</b>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HISTORY -->
+        <section class="history" id="history">
+
+            <div class="section-title">
+
+                <span>
+                    03 / ИСТОРИЯ
+                </span>
+
+                <h2>
+                    НАША ИСТОРИЯ
+                </h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <span>
+                        1990
+                    </span>
+
+                    <h3>
+                        НАЧАЛО
+                    </h3>
+
+                    <p>
+                        Первые страницы истории нашей школы.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span>
+                        2000
+                    </span>
+
+                    <h3>
+                        РАЗВИТИЕ
+                    </h3>
+
+                    <p>
+                        Новые возможности и новое поколение.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span>
+                        2010
+                    </span>
+
+                    <h3>
+                        НОВЫЙ ЭТАП
+                    </h3>
+
+                    <p>
+                        Развитие образования и технологий.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span>
+                        2020
+                    </span>
+
+                    <h3>
+                        НОВАЯ ЭРА
+                    </h3>
+
+                    <p>
+                        Новый шаг к современному образованию.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span>
+                        2026
+                    </span>
+
+                    <h3>
+                        БУДУЩЕЕ
+                    </h3>
+
+                    <p>
+                        Мы только начинаем.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACHIEVEMENTS -->
+        <section class="achievements" id="achievements">
+
+            <div class="section-title">
+
+                <span>
+                    04 / ДОСТИЖЕНИЯ
+                </span>
+
+                <h2>
+                    НАШИ ДОСТИЖЕНИЯ
+                </h2>
+
+            </div>
+
+
+            <div class="achievement-list">
+
+                <div class="achievement">
+
+                    <span>01</span>
+
+                    <h3>
+                        ОЛИМПИАДЫ
+                    </h3>
+
+                    <strong>
+                        120+
+                    </strong>
+
+                </div>
+
+
+                <div class="achievement">
+
+                    <span>02</span>
+
+                    <h3>
+                        СПОРТ
+                    </h3>
+
+                    <strong>
+                        80+
+                    </strong>
+
+                </div>
+
+
+                <div class="achievement">
+
+                    <span>03</span>
+
+                    <h3>
+                        IT И ТЕХНОЛОГИИ
+                    </h3>
+
+                    <strong>
+                        50+
+                    </strong>
+
+                </div>
+
+
+                <div class="achievement">
+
+                    <span>04</span>
+
+                    <h3>
+                        ИСКУССТВО
+                    </h3>
+
+                    <strong>
+                        100+
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALLERY -->
+        <section class="gallery" id="gallery">
+
+            <div class="section-title">
+
+                <span>
+                    05 / ЖИЗНЬ ШКОЛЫ
+                </span>
+
+                <h2>
+                    ЖИЗНЬ ШКОЛЫ
+                </h2>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <div>ФОТО 01</div>
+                </div>
+
+                <div class="gallery-item">
+                    <div>ФОТО 02</div>
+                </div>
+
+                <div class="gallery-item">
+                    <div>ФОТО 03</div>
+                </div>
+
+                <div class="gallery-item">
+                    <div>ФОТО 04</div>
+                </div>
+
+                <div class="gallery-item">
+                    <div>ФОТО 05</div>
+                </div>
+
+                <div class="gallery-item">
+                    <div>ФОТО 06</div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FUTURE -->
+        <section class="future">
+
+            <span>
+                06 / БУДУЩЕЕ
+            </span>
+
+            <h2>
+                МЫ СОЗДАЁМ
+                <br>
+                БУДУЩЕЕ.
+            </h2>
+
+            <p>
+                Сегодняшний ученик — завтрашний специалист.
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="contact">
+
+            <span>
+                07 / КОНТАКТЫ
+            </span>
+
+            <h2>
+                01
+            </h2>
+
+            <p>
+                Свяжитесь со школой №1
+            </p>
+
+
+            <div class="contact-info">
+
+                <p>
+                    📍 Коканд, Узбекистан
+                </p>
+
+                <p>
+                    📞 +998 XX XXX XX XX
+                </p>
+
+                <p>
+                    📱 Telegram
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div>
+
+            <strong>
+                01
+            </strong>
+
+            <span>
+                ШКОЛА №1
+            </span>
+
+        </div>
+
+
+        <p>
+            © 2026 Школа №1. Цифровой кампус.
+         </p>
+
+    </footer>
+
+
+    <script src="./app.js   "></script>
+
+</body>
+
+</html>
+>>>>>>> 67efd540e0d42bfb2fa8c18ce345bc09596b3b7f
